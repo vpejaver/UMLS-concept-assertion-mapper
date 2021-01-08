@@ -1,5 +1,5 @@
 # UMLS-concept-assertion-mapper
-1;4205;0c## Setting up the input as a MySQL database
+## Setting up the input as a MySQL database
 
 ## Running the pipeline
 To run the main file (Test.java in src/main/java/edu/uw/bhi/bionlp/pipeline), change directory to *PipelineScripts* and then type:
