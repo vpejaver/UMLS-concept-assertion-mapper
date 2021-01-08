@@ -1,9 +1,10 @@
 # UMLS-concept-assertion-mapper
-## Setting up the input as a MySQL database
+1;4205;0c## Setting up the input as a MySQL database
 
 ## Running the pipeline
 To run the main file (Test.java in src/main/java/edu/uw/bhi/bionlp/pipeline), change directory to *PipelineScripts* and then type:
-```java -Xmx4g -Dlog4j.configurationFile=file:////home/vpejaver/repos/UMLS-concept-assertion-mapper/PipelineScripts/src/main/resources/log4j2.xml -cp "src/main/java:src/main/resources:lib/*" edu.uw.bhi.bionlp.pipeline.Test <DB server> <DB name> <Table name> <Verbose> <Max heap size> <Start note ID> <End note ID> <Username> <Password>
+```
+java -Xmx4g -Dlog4j.configurationFile=file:////home/vpejaver/repos/UMLS-concept-assertion-mapper/PipelineScripts/src/main/resources/log4j2.xml -cp "src/main/java:src/main/resources:lib/*" edu.uw.bhi.bionlp.pipeline.Test <DB server> <DB name> <Table name> <Verbose> <Max heap size> <Start note ID> <End note ID> <Username> <Password>
 ```
 where,
 * DB server can be localhost or an IP address of the server hosting the input MySQL table
@@ -17,5 +18,6 @@ where,
 * Password is the password for access to this database
 
 Here is an example:
-```java -Xmx4g -Dlog4j.configurationFile=file:////home/vpejaver/repos/UMLS-concept-assertion-mapper/PipelineScripts/src/main/resources/log4j2.xml -cp "src/main/java:src/main/resources:lib/*" edu.uw.bhi.bionlp.pipeline.Test localhost CLEAR TAN_DATASET_SEG_OP 0 4g 1 871 vpejaver password
+```
+java -Xmx4g -Dlog4j.configurationFile=file:////home/vpejaver/repos/UMLS-concept-assertion-mapper/PipelineScripts/src/main/resources/log4j2.xml -cp "src/main/java:src/main/resources:lib/*" edu.uw.bhi.bionlp.pipeline.Test localhost CLEAR TAN_DATASET_SEG_OP 0 4g 1 871 vpejaver password
 ```
